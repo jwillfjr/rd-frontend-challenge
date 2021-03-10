@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+html, body, #app {
+    height: 100%;
+}
+
+body, input, button {
+    font: 14px 'Roboto', sans-serif;
+}
+
+#app {
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(-45deg, #aaa 25%, #eee 100%);
+    background-attachment: fixed;
+}
+
+.login {
+    padding: 0px 35%;
+}
+
+form {
+    background: #dadada;
+    border-radius: 20px 0px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.user {
+    min-height: 50px;
+    min-width: 72px;
+    background: white;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+    text-align: justify;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.div-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: grayscale(1);
+    transition: .5s ease-in-out;
+}
+
+.avatar:hover {
+    filter: grayscale(0);
+    width: 60px;
+    height: 60px;
+    position: static;
+    transform: translate(-12.5%, -12.5%);
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: baseline;
+    padding: 10px 20%;
+}
+
+li {
+    width: fit-content;
+    display: block;
+    margin: auto 5px 5px;
+    flex-grow: 1;
+}
+
+form input {
+    outline: 0;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #d2d2d2;
+    border-radius: 5px;
+}
+
+form button {
+    outline: 0;
+    background: #d1d1d1;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:not(:disabled) {
+    background: #008429;
+}
+
+.logo {
+    width: 100%;
+    height: 50px;
+    margin: auto 0px 10px;
+}
